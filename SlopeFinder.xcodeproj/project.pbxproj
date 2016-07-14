@@ -7,28 +7,36 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F5DB88401D37031000B123F4 /* SlopeData.m in Sources */ = {isa = PBXBuildFile; fileRef = F5DB883F1D37031000B123F4 /* SlopeData.m */; };
+		F5DB88421D370B6700B123F4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5DB88411D370B6700B123F4 /* CoreGraphics.framework */; };
 		F5F7BDAD1D36A67600AA4867 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F5F7BDAC1D36A67600AA4867 /* main.m */; };
 		F5F7BDB01D36A67600AA4867 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F5F7BDAF1D36A67600AA4867 /* AppDelegate.m */; };
-		F5F7BDB31D36A67600AA4867 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5F7BDB21D36A67600AA4867 /* FirstViewController.m */; };
-		F5F7BDB61D36A67600AA4867 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5F7BDB51D36A67600AA4867 /* SecondViewController.m */; };
 		F5F7BDB91D36A67600AA4867 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5F7BDB71D36A67600AA4867 /* Main.storyboard */; };
 		F5F7BDBB1D36A67600AA4867 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5F7BDBA1D36A67600AA4867 /* Assets.xcassets */; };
 		F5F7BDBE1D36A67600AA4867 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5F7BDBC1D36A67600AA4867 /* LaunchScreen.storyboard */; };
+		F5F7BDCA1D36A99000AA4867 /* LevelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5F7BDC81D36A99000AA4867 /* LevelViewController.m */; };
+		F5F7BDCD1D36ADBF00AA4867 /* CameraPreviewView.m in Sources */ = {isa = PBXBuildFile; fileRef = F5F7BDCC1D36ADBF00AA4867 /* CameraPreviewView.m */; };
+		F5F7BDD01D36C7C600AA4867 /* CameraFinderViewController1.m in Sources */ = {isa = PBXBuildFile; fileRef = F5F7BDCF1D36C7C600AA4867 /* CameraFinderViewController1.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F5DB883E1D37031000B123F4 /* SlopeData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SlopeData.h; sourceTree = "<group>"; };
+		F5DB883F1D37031000B123F4 /* SlopeData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SlopeData.m; sourceTree = "<group>"; };
+		F5DB88411D370B6700B123F4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		F5F7BDA81D36A67600AA4867 /* SlopeFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlopeFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5F7BDAC1D36A67600AA4867 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F5F7BDAE1D36A67600AA4867 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F5F7BDAF1D36A67600AA4867 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		F5F7BDB11D36A67600AA4867 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		F5F7BDB21D36A67600AA4867 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		F5F7BDB41D36A67600AA4867 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		F5F7BDB51D36A67600AA4867 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		F5F7BDB81D36A67600AA4867 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F5F7BDBA1D36A67600AA4867 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F5F7BDBD1D36A67600AA4867 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F5F7BDBF1D36A67600AA4867 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5F7BDC71D36A99000AA4867 /* LevelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LevelViewController.h; sourceTree = "<group>"; };
+		F5F7BDC81D36A99000AA4867 /* LevelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LevelViewController.m; sourceTree = "<group>"; };
+		F5F7BDCB1D36ADBF00AA4867 /* CameraPreviewView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraPreviewView.h; sourceTree = "<group>"; };
+		F5F7BDCC1D36ADBF00AA4867 /* CameraPreviewView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraPreviewView.m; sourceTree = "<group>"; };
+		F5F7BDCE1D36C7C600AA4867 /* CameraFinderViewController1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraFinderViewController1.h; sourceTree = "<group>"; };
+		F5F7BDCF1D36C7C600AA4867 /* CameraFinderViewController1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraFinderViewController1.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5DB88421D370B6700B123F4 /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,6 +54,7 @@
 		F5F7BD9F1D36A67600AA4867 = {
 			isa = PBXGroup;
 			children = (
+				F5DB88411D370B6700B123F4 /* CoreGraphics.framework */,
 				F5F7BDAA1D36A67600AA4867 /* SlopeFinder */,
 				F5F7BDA91D36A67600AA4867 /* Products */,
 			);
@@ -61,17 +71,21 @@
 		F5F7BDAA1D36A67600AA4867 /* SlopeFinder */ = {
 			isa = PBXGroup;
 			children = (
+				F5F7BDCE1D36C7C600AA4867 /* CameraFinderViewController1.h */,
+				F5F7BDCF1D36C7C600AA4867 /* CameraFinderViewController1.m */,
+				F5F7BDC71D36A99000AA4867 /* LevelViewController.h */,
+				F5F7BDC81D36A99000AA4867 /* LevelViewController.m */,
 				F5F7BDAE1D36A67600AA4867 /* AppDelegate.h */,
 				F5F7BDAF1D36A67600AA4867 /* AppDelegate.m */,
-				F5F7BDB11D36A67600AA4867 /* FirstViewController.h */,
-				F5F7BDB21D36A67600AA4867 /* FirstViewController.m */,
-				F5F7BDB41D36A67600AA4867 /* SecondViewController.h */,
-				F5F7BDB51D36A67600AA4867 /* SecondViewController.m */,
 				F5F7BDB71D36A67600AA4867 /* Main.storyboard */,
 				F5F7BDBA1D36A67600AA4867 /* Assets.xcassets */,
 				F5F7BDBC1D36A67600AA4867 /* LaunchScreen.storyboard */,
 				F5F7BDBF1D36A67600AA4867 /* Info.plist */,
 				F5F7BDAB1D36A67600AA4867 /* Supporting Files */,
+				F5F7BDCB1D36ADBF00AA4867 /* CameraPreviewView.h */,
+				F5F7BDCC1D36ADBF00AA4867 /* CameraPreviewView.m */,
+				F5DB883E1D37031000B123F4 /* SlopeData.h */,
+				F5DB883F1D37031000B123F4 /* SlopeData.m */,
 			);
 			path = SlopeFinder;
 			sourceTree = "<group>";
@@ -154,10 +168,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F5F7BDB61D36A67600AA4867 /* SecondViewController.m in Sources */,
+				F5F7BDD01D36C7C600AA4867 /* CameraFinderViewController1.m in Sources */,
+				F5DB88401D37031000B123F4 /* SlopeData.m in Sources */,
+				F5F7BDCD1D36ADBF00AA4867 /* CameraPreviewView.m in Sources */,
 				F5F7BDB01D36A67600AA4867 /* AppDelegate.m in Sources */,
-				F5F7BDB31D36A67600AA4867 /* FirstViewController.m in Sources */,
 				F5F7BDAD1D36A67600AA4867 /* main.m in Sources */,
+				F5F7BDCA1D36A99000AA4867 /* LevelViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,6 +322,7 @@
 				F5F7BDC41D36A67600AA4867 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,5 +1,5 @@
 //
-//  FirstViewController.h
+//  LevelViewController.h
 //  SlopeFinder
 //
 //  Created by Vlad Turchenko on 7/13/16.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FirstViewController : UIViewController
+@interface LevelViewController : UIViewController
 
 
 @end

@@ -1,5 +1,5 @@
 //
-//  SecondViewController.h
+//  CameraPreviewView.h
 //  SlopeFinder
 //
 //  Created by Vlad Turchenko on 7/13/16.
@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SecondViewController : UIViewController
+@class AVCaptureSession;
 
+@interface CameraPreviewView : UIView
+
+@property (nonatomic) AVCaptureSession *session;
 
 @end
-

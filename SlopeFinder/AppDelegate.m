@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "SlopeData.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 	// Override point for customization after application launch.
+	self.slopeData = [[SlopeData alloc] init];
 	return YES;
 }
 
