@@ -53,6 +53,7 @@
 {
 	// Disable autorotation of the interface when recording is in progress.
 	return ![self lockInterfaceRotation];
+//	return NO;
 }
 //---------------------------------------------
 - (UIInterfaceOrientationMask)supportedInterfaceOrientations
@@ -92,6 +93,8 @@
 	[self.view bringSubviewToFront:self.labelAlignText];
 	[self.view bringSubviewToFront:self.labelAlignLine];
 	[self.view bringSubviewToFront:self.viewSlopeAngle];
+	
+//	[UIView setAnimationsEnabled:NO];
 }
 //---------------------------------------------
 - (void)viewDidAppear:(BOOL)animated
@@ -99,6 +102,10 @@
 	//start animation update timer and motion controller service
 	[self.slopeData start];
 	self.timer = [NSTimer scheduledTimerWithTimeInterval:0.1f target:self selector:@selector(refreshData) userInfo:nil repeats:YES];
+//	NSNumber *value = [NSNumber numberWithInt:UIInterfaceOrientationLandscapeLeft];
+//	[[UIDevice currentDevice] setValue:value forKey:@"orientation"];
+//	[UIView setAnimationsEnabled:YES];
+//	[UIViewController attemptRotationToDeviceOrientation];
 }
 //---------------------------------------------
 - (void)viewWillDisappear:(BOOL)animated
@@ -123,6 +130,10 @@
 	
 
 	AVCaptureDevice *inputDevice = [CameraFinderViewController deviceWithMediaType:AVMediaTypeVideo preferringPosition:AVCaptureDevicePositionBack];
+
+	// Check for device authorization
+	[self checkDeviceAuthorizationStatus];
+	
 //	AVCaptureDevice *inputDevice = [AVCaptureDevice defaultDeviceWithMediaType:AVMediaTypeVideo];
 	AVCaptureDeviceInput *captureInput = [AVCaptureDeviceInput deviceInputWithDevice:inputDevice error:nil];
 	if (!captureInput)
@@ -140,9 +151,6 @@
 	// set up capture session
 	self.session = [[AVCaptureSession alloc] init];
 	
-	// Check for device authorization
-	[self checkDeviceAuthorizationStatus];
-
 	NSString* preset = 0;
 	if (!preset)
 	{
@@ -183,11 +191,21 @@
 		else
 		{
 			dispatch_async(dispatch_get_main_queue(), ^{
-				[[[UIAlertView alloc] initWithTitle:@"SlopeFinder"
-											message:@"SlopeFinder doesn't have permission to use the Camera"
-										   delegate:self
-								  cancelButtonTitle:@"OK"
-								  otherButtonTitles:nil] show];
+				UIAlertController * alert = [UIAlertController
+											 alertControllerWithTitle:@"SlopeFinder"
+											 message:@"SlopeFinder doesn't have permission to use the Camera"
+											 preferredStyle:UIAlertControllerStyleAlert];
+				
+				UIAlertAction* okButton = [UIAlertAction
+											actionWithTitle:@"OK"
+											style:UIAlertActionStyleDefault
+											handler:^(UIAlertAction * action) {
+												//Handle your ok button action here
+											}];
+				
+				[alert addAction:okButton];
+				[self presentViewController:alert animated:YES completion:nil];
+				
 				[self setDeviceAuthorized:NO];
 			});
 		}
